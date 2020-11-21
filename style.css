@@ -1,0 +1,402 @@
+*, *::before , *::after{
+    box-sizing: border-box; 
+}
+body{ 
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header{ 
+    height: 80px;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden; 
+}
+header .logo{
+    max-width: 250px;
+    padding: 0 10px 0 20px;
+    overflow: hidden;
+}
+header img{
+    max-width: 100%;
+    height: 80px;
+}
+header .navbar{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex:1;
+    flex: 1;
+    padding: 0 10px;   
+    background-color: rgb(247, 243, 244);
+}
+header .navbar ul{
+   display: flex; 
+   display: -ms-flexbox;
+   display: -webkit-box;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+header .navbar ul li a{
+    padding: 0 10px; 
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+}
+header .navbar ul li a:hover{
+    color: cadetblue;
+}
+header .navbar ul .close{
+    display: none;
+    text-align: right;
+    padding: 15px;
+}
+header .navbar ul .close span{
+    font-size: 30px;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0 15px;
+}
+header .navbar .icon {
+    padding: 15px 5px;
+    width: 50px;
+    height: 60px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+header .navbar .icon i {
+    background-color: #1a1717;
+    height: 2px;
+  }
+ 
+.div1{
+   display: flex;
+   display: -webkit-flex;
+   display: -ms-flexbox;   
+   margin: 50px;
+   flex-direction: row;
+   -ms-flex-direction: row;
+   -webkit-box-direction: normal;
+}
+.div1 .sec1{
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content:first baseline; 
+    align-items:flex-start;
+    flex: 40%; 
+    flex-direction: column;
+}
+.div1 .sec1 span{
+    color:blue;
+}
+.div1 .sec1 button{
+ background-color: crimson;
+ color: white; 
+ border-radius: 5px;
+ width: 200px;
+ height: 50px;
+ font-size: 20px;
+}
+.div1 .sec2{  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex: 60%; 
+    background: linear-gradient(45deg , rgb(190, 34, 94) , rgb(57, 57, 185));
+    border-radius: 10px;
+}
+.div1 .sec2 video{
+    width: 95%;
+    height: 85%;
+}
+.div2{
+    display: grid;
+    display: -ms-grid; 
+    grid-template-columns:  25% 25% 25% 25%;
+    grid-gap: 10px;
+    margin-left: 10px;
+}
+.div2 .sec1 ,.sec2, .sec3, .sec4{
+   display: flex;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+}
+.div2 p{ 
+    font-size: 25px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(82, 75, 75);
+    text-shadow: 1px 0px black;
+}
+.div2 img{
+    height: 40%;
+    width: 40%;
+    border-radius: 15px;
+}
+.div3{ 
+    width: 100vw;
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+}
+.div3 h1{
+    margin-top: 30px;
+    color: rgb(36, 55, 56);
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.div3 .sub{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+.div3 .sub .sec1{
+    flex: 1;
+    margin-left: 50px;
+    display: inline; 
+}
+.div3 .sub .sec1 h2{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: darkgoldenrod; 
+}
+.div3 .sub .sec1 img{
+    border-radius: 10%;
+}
+.div3 .sub .sec2 img{
+    border-radius: 10px;
+    border: 2px solid rgb(114, 133, 133);
+    margin-right: 50px;
+}
+.div4{
+   width: 84%;
+   height: auto;
+   margin: 50px auto;  
+}
+.div4 .sub-div{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+}
+.div4 .sub-div h1{
+    flex: 1;
+    font-weight: bolder;
+}
+.div4 .sub-div p{
+    color: rgb(24, 28, 31);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+.div4 .sub-div .img1 , .img2 , .img3{
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+.div4 .sub-div .img1 img, .img2 img , .img3 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid slategray;
+}
+.div4 button{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(206, 41, 12);
+    color: white;
+    font-size: 15px;
+    border-radius: 10px; 
+}
+.div5{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column; 
+}
+.div5 h1,h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(4, 24, 83);
+}
+.div5 .sub{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+}
+.div5 .sub .sec1{
+    flex: 1;
+}
+.div5 .sub .sec1 video{
+  width: 80%;
+  margin-left: 50px;
+  border: 5px solid steelblue;
+}
+.div5 .sub .sec2{
+    flex: 1;
+    flex-direction: column;
+}
+.div5 button{
+    font-size: 20px;
+    margin: auto;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+}
+@media (max-width:650px){
+    header{
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    header .logo{
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex:1;
+    }
+    header .navbar{
+        -webkit-box-flex: 0;
+        -ms-flex: 0;
+        flex:0;
+        background-color: white;
+    }
+    header .navbar ul {
+        position: fixed;
+        left: 100%;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: #f1eaea;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        -webkit-transition: left .3s;
+        -o-transition: left .3s;
+        transition: left .3s;
+      }
+      header .navbar ul li a{
+          padding: 10px 10px;
+          font-size: 20px;
+          line-height: normal;
+          height: auto;
+          color: cornflowerblue;
+      }
+      header .navbar ul .close{
+          display: block;
+      }
+      header .navbar .icon{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          position: absolute;
+          right: 0;
+          top: 20px;
+      }
+      header .navbar .menu{
+          left: 0;
+      }
+      .div1{
+        flex-direction: column;
+        -ms-flex-direction: column;
+      
+      }
+      .div1 .sec1{
+        font-size: 15px;
+      }
+      .div1 .sec1 button{
+          width: 100px;
+          height: 30px;
+          font-size: 10px;
+          margin-bottom: 30px;
+      }
+      .div2{
+          grid-template-columns: 50% 50%;
+      }
+      .div2 p{
+          margin-top: 0;
+          font-size: 18px;
+      }
+      .div3{
+          background-color: white;
+      }
+      .div3 .sub{
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+      }
+      .div3 .sub .sec1 h2{
+          font-size: 18px;
+      }
+      .div3 .sub .sec2 img{
+          margin: 10px;
+          width: 300px;
+      }
+      .div4 .sub-div .img1 img, .img2 img , .img3 img{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        border: 2px solid slategray;
+    }
+    .div4 .sub-div p{
+        color: rgb(24, 28, 31);
+        font-size: 12px;
+        font-weight: bolder;
+        margin-left: 15px;
+    }
+    .div4 button{
+        width: 130px;
+        height: 30px;
+        font-size: 10px;
+        border-radius: 2px;
+        margin: 10px 0 10px 130px; 
+    }
+    .div5 .sub{
+        flex-direction: column;
+    }
+    .div5 .sub .sec1 video{
+        width: 90%; 
+        border: 5px solid steelblue;
+      }
+    .div5 .sub .sec2{
+        margin-left: 70px;
+    }
+    .div5 .sub .sec2 h1{
+        font-size: 10px; 
+    }
+}
